@@ -1,27 +1,24 @@
 {
-  "name": "tutorial-sem3-hu-devs",
+  "name": "tutorial-1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaki309/tutorial-sem3-hu-devs.git"
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
+    "test": "jest --coverage",
+    "lint": "eslint ./src --ext .ts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/kaki309/tutorial-sem3-hu-devs/issues"
-  },
-  "homepage": "https://github.com/kaki309/tutorial-sem3-hu-devs#readme",
+  "author": "Juan Vicente Pradilla Cerón",
+  "license": "LGPL",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "5.3.3"
   }
 }
